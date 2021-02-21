@@ -1,0 +1,151 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title=title
+  link(rel='stylesheet' href='styles/slider.css')
+  link(rel='stylesheet' href='styles/colorbox.css')
+  link(rel='stylesheet' href='styles/style.css')
+  script(src='js/jquery.min.js')
+  script(src='js/jquery-easing-1.3.pack.js')
+  script(src='js/jquery-easing-compatibility.1.2.pack.js')
+  script(src='js/colorbox.js')
+  script(src='js/main.js')
+  script(src='js/slider.js')
+header.main-menu
+  .logo
+    a(href='#')
+      img(src='images/logoescom.png' width='150' alt='')
+  input#btn-menu(type='checkbox')
+  label.icon-menu(for='btn-menu')
+    .linea.linea01
+    .linea.linea02
+    .linea.linea03
+  nav.menu
+    ul
+      li
+        a.activa(href='#')=links[0]
+      each item in links
+       li
+        a(href='#')= item
+        
+nav
+  .bxslider
+    div
+      img(src='images/fotoescom1.jpg' title='Funky roots')
+      .caption-slider
+        h2.titulo= titleSlider1
+        h3
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna
+    div
+      img(src='images/coffee0.jpg' title='The long and winding road')
+      .caption-slider
+        h2.titulo= titleSlider2
+        h3
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna
+    div
+      img(src='images/coffee3.jpg' title='Happy trees')
+      .caption-slider
+        h2.titulo= titleSlider3
+        h3
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna
+main.conteindo-principal
+  section
+    article
+      header
+        h1.titulo-principal=head
+        time(datetime='2017-7-25' pubdate='pubdate')=fecha
+        .autor
+          span  Por : 
+          |  consectetur adipisicing
+        .autor-fotografias
+          span  Fotos : 
+          |  sed do eiusmod
+      .conjunto
+        .elemento
+          p
+
+            h2 Registro
+            form(action="/pokemon", method="post")
+              label(for="nombre") Nombre
+              input(name="nombre")
+            
+              label(for="apellidos") Apellidos
+              input(name="apellidos")
+            
+              label(for="boleta") Boleta
+              input(name="boleta")
+           
+              button(type="submit" id="enviar") Enviar
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .elemento.lateral-1
+        .anchoCompleto.contenedorImg
+          a.group1(href='images/fotoescom1.jpg' title='Imagen1')
+            img(src='images/fotoescom1.jpg' width='100%' height='100%' alt='')
+        p.elemento-solo
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .anchoCompleto
+          .cuadroNaranja  
+        .anchoCompleto.contenedorImg
+          a.group1(href='images/fotoEscom2.jpg' title='Imagen2')
+            img(src='images/fotoEscom2.jpg' width='100%' height='100%' alt='')
+        p.elemento-solo
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .anchoCompleto.enlace-sitio-web
+        .anchoCompleto
+          a(href='#')=url
+      .anchoCompleto.items-sociales
+        .item-social
+          a(href='#')
+            img.facebook(src='images/facebook.png' width='50px' height='auto')
+        .item-social
+          a(href='#')
+            img.twitter(src='images/twitter.png' width='50px' height='auto')
+        .item-social
+          a(href='#')
+            img.instagram(src='images/instagram.png' width='50px' height='auto')
+aside.relacionados
+  header
+    h2 Lo m&aacute;s leido
+  .item-relacionados
+    a(href='#')
+      .limitador-cubre-Miniaturas
+        img(src='images/realcionados1.png' width='100%' height='aute' alt='')
+        .cubreimgMiniaturas  
+      h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  .item-relacionados
+    a(href='#')
+      .limitador-cubre-Miniaturas
+        img(src='images/relacionados2.png' width='100%' height='aute' alt='')
+        .cubreimgMiniaturas  
+      h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  .item-relacionados
+    a(href='#')
+      .limitador-cubre-Miniaturas
+        img(src='images/relacionados3.png' width='100%' height='aute' alt='')
+        .cubreimgMiniaturas  
+      h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

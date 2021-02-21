@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Pokedex
+  link(rel='shortcut icon' href='img/favicon-32x32.png' type='image/x-icon')
+  link(rel='stylesheet' href='css/normalize.css')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='css/estilos.css')
+main.flex
+  article.card
+    img.card-header(src='img/bg-pattern-card.svg' alt='imagen header card')
+    .card-body
+      img.card-body-img(src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/'+id+'.svg' alt='imagen de'+nombre)
+      h1.card-body-title
+        blackns= nombre
+        span=id
+      p.card-body-text 
+        img(src=spriteFrente title=nombre+' frente' alt='imagen de '+nombre+" frente" )
+        img(src=spriteDetras title=nombre+' atraz' alt='imagen de '+nombre+" atras" )
+    h2.mov Movimientos
+    .card-footer
+        .card-footer-social
+            h3= movimientos[0]
+            p Moviemiento
+        .card-footer-social
+            h3= movimientos[1]
+            p Moviemiento
+        .card-footer-social
+            h3= movimientos[2]
+            p Moviemiento    
+      
